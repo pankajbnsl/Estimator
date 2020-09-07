@@ -80,3 +80,6 @@ document.querySelector(".op__key[op=clear]")
 
 document.querySelector(".op__key[op=negate]")
 .onclick = () => ($input.value = -parseFloat($input.value));
+
+document.querySelector(".op__key[op=back]")
+.onclick = () => ($input.value = parseFloat($input.value.substr(0, $input.value.length-1)));
