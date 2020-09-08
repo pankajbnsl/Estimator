@@ -83,3 +83,12 @@ document.querySelector(".op__key[op=negate]")
 
 document.querySelector(".op__key[op=back]")
 .onclick = () => ($input.value = parseFloat($input.value.substr(0, $input.value.length-1)));
+
+document.querySelector(".op__key[op=sin]")
+.onclick = () => ($input.value = parseFloat(Math.sin($input.value)));
+
+document.querySelector(".op__key[op=cos]")
+.onclick = () => ($input.value = parseFloat(Math.cos($input.value)));
+
+document.querySelector(".op__key[op=tan]")
+.onclick = () => ($input.value = parseFloat(Math.tan($input.value)));
